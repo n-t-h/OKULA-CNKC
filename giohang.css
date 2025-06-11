@@ -1,0 +1,177 @@
+/* ========================
+   Tổng thể trang
+======================== */
+body {
+  font-family: Arial, sans-serif; /* Font chữ chính của toàn bộ trang */
+
+  background: #fff; /* Màu nền trắng */
+  color: #333; /* Màu chữ xám đậm */
+}
+
+/* ========================
+   Khoảng cách phần giỏ hàng
+======================== */
+.cart-container {
+  margin-top: 100px; /* Đẩy phần giỏ hàng cách đỉnh trang 100px */
+  padding: 30px; /* khoảng cách 2 bên mép trình duyệt*/
+}
+
+/* ========================
+   Tiêu đề chính
+======================== */
+.title {
+  text-align: center; /* Căn giữa tiêu đề */
+  border-bottom: 2px solid #333; /* Gạch dưới màu xám đậm */
+  margin-bottom: 50px; /* Khoảng cách dưới tiêu đề */
+}
+/* ========================
+   Cài đặt bảng giỏ hàng
+======================== */
+.cart-table {
+  width: 100%; /* Bảng chiếm toàn bộ chiều ngang màn hình */
+  table-layout: fixed; /* Các cột có độ rộng cố định giúp cân đối giao diện */
+  border-collapse: collapse; /* Gộp đường viền bảng lại gọn gàng */
+  margin-bottom: 20px; /* Khoảng cách với phần bên dưới */
+}
+
+/* ========================
+   Tiêu đề bảng (thẻ <th>)
+======================== */
+.cart-table th {
+  background-color: #f5dede; /* Màu nền nhạt giúp dễ nhìn */
+  padding: 10px; /* Khoảng cách trong ô */
+  border: 1px solid #ccc; /* Viền rõ ràng hơn phần nội dung */
+  font-size: 14px; /* Cỡ chữ nhỏ gọn */
+}
+
+/* ========================
+   Nội dung các ô
+======================== */
+.cart-table td {
+  padding: 10px; /* Khoảng cách trong ô */
+  border: 1px solid #eee; /* Viền ô rất nhạt */
+  text-align: center; /* Căn giữa nội dung */
+  font-size: 14px; /* Cỡ chữ đồng bộ với tiêu đề */
+}
+
+/* ========================
+   Cột 1: Tên sản phẩm
+======================== */
+.cart-table td:nth-child(1),
+.cart-table th:nth-child(1) {
+  max-width: 220px; /* Giới hạn chiều rộng tên sản phẩm */
+  word-wrap: break-word; /* Cho phép xuống dòng khi tên dài */
+  white-space: normal; /* Không giữ chữ trên 1 dòng */
+}
+
+/* ========================
+   Cột 2: Giá sản phẩm
+======================== */
+.cart-table td:nth-child(2),
+.cart-table th:nth-child(2) {
+  width: 120px; /* Cố định chiều rộng cho giá */
+}
+
+/* ========================
+   Cột 3: Số lượng
+======================== */
+.cart-table td:nth-child(3),
+.cart-table th:nth-child(3) {
+  width: 160px; /* Tăng độ rộng để dễ thao tác */
+}
+
+/* ========================
+   Cột 4: Thành tiền
+======================== */
+.cart-table td:nth-child(4),
+.cart-table th:nth-child(4) {
+  width: 150px; /* Vừa đủ hiển thị số tiền */
+}
+
+/* ========================
+   Cột 5: Thao tác (xoá, +/-)
+======================== */
+.cart-table td:nth-child(5),
+.cart-table th:nth-child(5) {
+  width: 100px; /* Đủ chỗ cho các nút thao tác */
+}
+
+/* ========================
+   Nút thao tác trong ô (➕ ➖ 🗑)
+======================== */
+.cart-table button {
+  padding: 4px 8px; /* Kích thước nút vừa tay */
+  margin: 0 3px; /* Khoảng cách giữa các nút */
+  font-size: 13px; /* Cỡ chữ nhỏ gọn */
+  cursor: pointer; /* Biến con trỏ thành bàn tay khi hover */
+  border: none; /* Bỏ viền mặc định */
+  border-radius: 5px; /* Bo tròn nhẹ cho nút */
+}
+
+/* ========================
+   Phần footer tổng tiền & nút đặt hàng
+======================== */
+.cart-footer {
+  display: flex; /* Sắp xếp các phần tử theo hàng ngang */
+  justify-content: space-between; /* Dãn đều hai bên */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  background: #f6f6f6; /* Màu nền nhạt */
+  padding: 15px; /* Khoảng cách bên trong */
+  font-weight: bold; /* In đậm */
+}
+
+/* ========================
+   Nút đặt hàng
+======================== */
+.order-btn {
+  background-color: #f1c40f; /* Màu vàng */
+  border: none; /* Không viền */
+  padding: 10px 20px; /* Kích thước nút */
+  color: white; /* Chữ màu trắng */
+  font-weight: bold; /* In đậm */
+  border-radius: 4px; /* Bo góc nhẹ */
+  cursor: pointer; /* Biến chuột thành bàn tay */
+  text-decoration: none; /* ✅ Bỏ gạch chân */
+}
+
+.order-btn:hover {
+  background-color: #d4ac0d; /* Màu vàng đậm hơn khi hover */
+}
+
+/* ========================
+   Nút Cập nhật + Xóa
+======================== */
+.action-btn {
+  background-color: #1abc9c; /* Màu xanh ngọc */
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  margin: 2px; /* Khoảng cách giữa 2 nút */
+  border-radius: 3px;
+  cursor: pointer;
+}
+.action-btn.delete {
+  background-color: #e74c3c; /* Nút xóa màu đỏ */
+}
+.action-btn:hover {
+  opacity: 0.8; /* Mờ đi một chút khi hover */
+}
+
+/* ========================
+   Responsive (hiển thị tốt trên mobile)
+======================== */
+@media screen and (max-width: 768px) {
+  .cart-table th,
+  .cart-table td {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .order-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .cart-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

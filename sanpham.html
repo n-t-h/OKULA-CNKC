@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản Phẩm - OKULA</title>
+    <link rel="stylesheet" href="css/nvar_footer.css" />
+    <link rel="stylesheet" href="css/sanpham.css" />
+
+    <!-- Font Awesome - để dùng icon như giỏ hàng, điện thoại -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="img/logo-okula.png" alt="Logo OKULA" />
+      </div>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Trang chủ</a></li>
+        <li><a href="gioithieu.html">Giới thiệu</a></li>
+        <li>
+          <a href="sanpham.html" class="menu-item">Sản Phẩm </a>
+        </li>
+        <li><a href="lienhe.html">Liên hệ</a></li>
+        <li>
+          <a href="login.html" class="menu-item-login">Đăng Nhập</a>
+        </li>
+      </ul>
+
+      <div class="right-section">
+        <div class="search-container">
+          <input type="text" placeholder="Bấm vào đây để tìm kiếm" />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <div class="cart-button-navar">
+          <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a>
+          <span id="soluonggiohang">0</span>
+        </div>
+        <div class="hotline-button">
+          <span><i class="fas fa-phone"></i> Hotline: 0869 008 681</span>
+        </div>
+      </div>
+    </div>
+    <div class="img-wrappersp">
+      <img src="img/backgroundspsin.png" alt="ảnh nền sản phẩm" />
+    </div>
+    <!-- Sản phẩm Nước giặt-->
+    <section class="featured-products1">
+      <h5>Dòng sản phẩm cao cấp </h5>
+      <h1>NƯỚC GIẶT XẢ OKULA </h1>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="img_sanpham/sp1.png" alt="Nước giặt common 10KG" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Giặt COMMON 10KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">360.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Giặt COMMON 10KG', 360000)">
+              <i class="fas fa-cart-plus"></i></button>
+              
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>    
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_sanpham/sp2.png" alt="Nước giặt xả OKULA + Bikini - Kids 1L " />
+          <div class="product-info">
+            
+            <p class="product-name">
+              Nước Giặt Xả OKULA + Bikini - Kids 1L
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">168.000đ</span>
+            </p>
+            <p class="cart-button">
+              
+              <button onclick="addToCart('Nước Giặt Xả OKULA + Bikini - Kids 1L', 168000)">
+              <i class="fas fa-cart-plus"></i></button>
+              
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>    
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_sanpham/sp3.png" alt="Nước Giặt Xả OKULA Hương Nước Hoa 1KG" />
+          <div class="product-info">
+            
+            <p class="product-name">
+              Nước Giặt Xả OKULA  Hương Nước Hoa 1KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">69.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Giặt Xả OKULA  Hương Nước Hoa 1KG', 69000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_sanpham/sp4.png" alt="Nước Giặt Xả OKULA Hương Dịu Êm 1KG" />
+          <div class="product-info">
+            
+            <p class="product-name">
+              Nước Giặt Xả OKULA Hương Dịu Êm 1KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">69.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Giặt Xả OKULA  Hương Dịu Êm 1KG', 69000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>  
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_sanpham/sp5.png" alt="Nước Giặt Xả OKULA Hương Nước Hoa 10KG" />
+          <div class="product-info">
+            
+            <p class="product-name">
+              Nước Giặt Xả OKULA Hương Nước Hoa 10KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">503.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Giặt Xả OKULA  Hương Nước Hoa 10KG', 503000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>  
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_sanpham/sp6.png" alt="Nước Giặt Xả OKULA Hương Dịu Êm 10KG" />
+          <div class="product-info">
+            
+            <p class="product-name">
+              Nước Giặt Xả OKULA Hương Dịu Êm 10KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">503.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Giặt Xả OKULA  Hương Dịu Êm 1KG', 503000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_sanpham/sp7.png" alt="Nước Giặt Siêu Sạch 10KG" />
+          <div class="product-info">
+            
+            <p class="product-name">
+              Nước Giặt Siêu Sạch 10KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">276.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Giặt Siêu Sạch 10KG', 276000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_sanpham/sp8.png" alt="Nước Giặt Xả OKULA Hương Dịu Êm 3,6KG" />
+          <div class="product-info">
+            
+            <p class="product-name">
+              Nước Giặt Xả OKULA Hương Dịu Êm 3,6KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">276.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Giặt Xả OKULA  Hương Dịu Êm 3,6KG', 276000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_sanpham/sp9.png" alt="Nước Giặt Xả OKULA Hương Nước Hoa 3,6KG" />
+          <div class="product-info">
+            
+            <p class="product-name">
+              Nước Giặt Xả OKULA Hương Nước Hoa 3,6KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">211.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Giặt Xả OKULA  Hương Nước Hoa 3,6KG', 211000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>    
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-products2">
+      <h5>Dòng sản phẩm cao cấp </h5>
+      <h1>NƯỚC RỬA CHÉN OKULA </h1>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="img_ruachen/sp1.png" alt="Nước Rửa Chén OKULA Hương Quế 750gr" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Rửa Chén OKULA Hương Quế 750gr
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">35.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Rửa Chén OKULA Hương Quế 750gr', 35000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_ruachen/sp2.png" alt="Nước Rửa Chén OKULA Hương Trà Xanh 400gr" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Rửa Chén OKULA Hương Trà Xanh 400gr
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">22.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Rửa Chén OKULA Hương Trà Xanh 400gr', 22000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_ruachen/sp3.png" alt="Nước Rửa Chén OKULA Hương Quế 400gr" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Rửa Chén OKULA Hương Quế 400gr
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">22.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Rửa Chén OKULA Hương Quế 400gr', 22000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>    
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_ruachen/sp2.png" alt="Nước Rửa Chén OKULA Hương Quế 10KG" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Rửa Chén OKULA Hương Quế 10KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">240.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Rửa Chén OKULA Hương Quế 10KG', 240000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_ruachen/sp5.png" alt="Nước Rửa Chén OKULA Hương Quế 3,6KG" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Rửa Chén OKULA Hương Quế 3,6KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">130.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Rửa Chén OKULA Hương Quế 3,6KG', 130000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_ruachen/sp6.png" alt="Rửa Rau Củ Quả Sinh Học Okula 1L Loại Bỏ Thuốc Trừ Sâu, Diệt Sạch Vi Khuẩn, An Toàn" />
+          <div class="product-info">
+            <p class="product-name">
+              Rửa Rau Củ Quả Sinh Học Okula 1L Loại Bỏ Thuốc Trừ Sâu, Diệt Sạch Vi Khuẩn, An Toàn
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">186.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart(' Rửa Rau Củ Quả Sinh Học Okula 1L Loại Bỏ Thuốc Trừ Sâu, Diệt Sạch Vi Khuẩn, An Toàn', 186000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>  
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_ruachen/sp7.png" alt="Nước Rửa Chén OKULA Hương Chanh Xả 10KG" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Rửa Chén OKULA Hương Chanh Xả 10KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">240.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Rửa Chén OKULA Hương Chanh Xả 10KG', 240000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>  
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_ruachen/sp8.png" alt="Nước Rửa Chén OKULA Hương Trà Xanh 3,6KG" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Rửa Chén OKULA Hương Trà Xanh 3,6KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">130.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Rửa Chén OKULA Hương Trà Xanh 3,6KG', 130000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>  
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_ruachen/sp9.png" alt="Nước Rửa Chén OKULA Hương Chanh Xả 3,6KG" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Rửa Chén OKULA Hương Chanh Xả 3,6KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">130.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Rửa Chén OKULA Hương Chanh Xả 3,6KG', 130000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_ruachen/sp10.png" alt="Nước Rửa Chén OKULA Hương Trà Xanh 750gr" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Rửa Chén OKULA Hương Trà Xanh 750gr
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">35.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Rửa Chén OKULA Hương Trà Xanh 750gr', 35000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_ruachen/sp11.png" alt="Nước Rửa Chén OKULA Hương Chanh Xả 750gr" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Rửa Chén OKULA Hương Chanh Xả 750gr
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">35.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Rửa Chén OKULA Hương Chanh Xả 750gr', 35000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-products3">
+      <h5>Dòng sản phẩm cao cấp </h5>
+      <h1>NƯỚC LAU SÀN OKULA </h1>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="img_lausan/sp1.png" alt="Nước Lau Sàn Okula Hương Chanh Xả 10KG" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Lau Sàn Okula Hương Chanh Xả 10KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">208.300đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Lau Sàn Okula Hương Chanh Xả 10KG', 208.300)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_lausan/sp2.png" alt="Nước Lau Sàn Okula Hương Quế 3,6KG" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Lau Sàn Okula Hương Quế 3,6KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">85.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Lau Sàn Okula Hương Quế 3,6KG', 85000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_lausan/sp3.png" alt="Nước Lau Sàn Okula Hương Chanh Xả 950gr" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Lau Sàn Okula Hương Chanh Xả 950gr
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">35.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Lau Sàn Okula Hương Chanh Xả 950gr', 35000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>    
+            </p>
+          </div>
+        </div>  
+        <div class="product-card">
+          <img src="img_lausan/sp4.png" alt="Nước Lau Sàn Okula Hương Hoa Nhài 3,6KG" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Lau Sàn Okula Hương Hoa Nhài 3,6KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">85.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Lau Sàn Okula Hương Hoa Nhài 3,6KG', 85000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_lausan/sp5.png" alt="Nước Lau Sàn Okula Hương Quế  10KG" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Lau Sàn Okula Hương Quế 10KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">208.300đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Lau Sàn Okula Hương Quế  10KG', 208.300)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_lausan/sp6.png" alt="Nước Lau Sàn Okula Hương Hoa Nhài 950gr" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Lau Sàn Okula Hương Hoa Nhài 950gr
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">35.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Lau Sàn Okula Hương Hoa Nhài 950gr', 35000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_lausan/sp7.png" alt="Nước Lau Sàn Okula Hương Chanh Xả 3,6KG" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Lau Sàn Okula Hương Chanh Xả 3,6KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">85.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Lau Sàn Okula Hương Chanh Xả 3,6KG', 85000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-products4">
+      <h5>Dòng sản phẩm cao cấp và Enzyme cao cấp </h5>
+      <h1>NƯỚC XẢ VẢI OKULA </h1>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="img_savai/sp1.png" alt="Nước Xả Vải OKULA Hương Ban Mai 10KG" />
+          <div class="product-info">
+            <p class="product-name">
+              Nước Xả Vải OKULA Hương Ban Mai 10KG
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">208.300đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Nước Xả Vải OKULA Hương Ban Mai 10KG', 208.300)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>  
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_savai/sp2.png" alt=" Cuốn Sách Enzyme BÍ MẬT CHẤT TẨY RỬA THẾ KỶ XXI" />
+          <div class="product-info">
+            <p class="product-name">
+              Cuốn Sách Enzyme BÍ MẬT CHẤT TẨY RỬA THẾ KỶ XXI
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">189.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Cuốn Sách Enzyme BÍ MẬT CHẤT TẨY RỬA THẾ KỶ XXI', 189.000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a> 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-products5">
+      <h5>Dòng sản phẩm Dược liệu cao cấp </h5>
+      <h1>OKULA NATURAL </h1>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="img_suatam/sp1.png" alt=" Sữa Tắm Hương Cam 100ml" />
+          <div class="product-info">
+            <p class="product-name">
+              Sữa Tắm Hương Cam 100ml
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">112.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Sữa Tắm Hương Cam 100ml', 112.000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_suatam/sp2.png" alt=" Dầu Xả Thảo Dược 100ml" />
+          <div class="product-info">
+            <p class="product-name">
+              Dầu Xả Thảo Dược 100ml
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">126.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Dầu Xả Thảo Dược 100ml', 126.000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_suatam/sp3.png" alt=" Dầu Gội Thảo Dược 100ml" />
+          <div class="product-info">
+            <p class="product-name">
+              Dầu Gội Thảo Dược 100ml
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">116.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Dầu Gội Thảo Dược 100ml', 116.000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_suatam/sp4.png" alt=" Dầu Gội Thảo Dược 500ml" />
+          <div class="product-info">
+            <p class="product-name">
+              Dầu Gội Thảo Dược 500ml
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">330.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Dầu Gội Thảo Dược 500ml', 330.000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>  
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_suatam/sp5.png" alt=" Sữa Tắm Hương Cam 500ml" />
+          <div class="product-info">
+            <p class="product-name">
+              Sữa Tắm Hương Cam 500ml
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">288.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Sữa Tắm Hương Cam 500ml', 288.000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>   
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_suatam/sp6.png" alt=" Dầu Xả Thảo Dược 500ml" />
+          <div class="product-info">
+            <p class="product-name">
+              Dầu Xả Thảo Dược 500ml
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">360.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Dầu Xả Thảo Dược 500ml', 360.000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>  
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_suatam/sp7.png" alt=" Dầu Xả Thảo Dược Hương Xưa 300ml" />
+          <div class="product-info">
+            <p class="product-name">
+              Dầu Xả Thảo Dược Hương Xưa 330ml
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">260.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Dầu Xả Thảo Dược Hương Xưa 300ml', 260.000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_suatam/sp8.png" alt=" Dầu Gội Thảo Dược Hương Xưa 300ml" />
+          <div class="product-info">
+            <p class="product-name">
+              Dầu Gội Thảo Dược Hương Xưa 300ml
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">240.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Dầu Gội Thảo Dược Hương Xưa 300ml', 240.000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a>  
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img_suatam/sp7.png" alt=" Sữa Tắm Hương Cam 500ml" />
+          <div class="product-info">
+            <p class="product-name">
+              Sữa Tắm Hương Cam 500ml
+            </p>
+            <p class="stars-price">
+              <!-- 5 sao vàng -->
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+              <i class="fas fa-star" style="color: gold;"></i>
+
+              <span class="product-price">198.000đ</span>
+            </p>
+            <p class="cart-button">
+              <button onclick="addToCart('Sữa Tắm Hương Cam 500ml', 198.000)">
+              <i class="fas fa-cart-plus"></i>
+              </button>
+              <a href="thanhtoan.html" class="muangay">Mua ngay</a> 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--Phần footer -->
+<section class="footer ">
+  <div class="footer-container">
+    <div class="footer-inner">
+      <!--phần trên của footer-->
+      <div class="top-footer">
+          <!--cột1 -->
+        <div class="footer_colum1">
+            <div class="diachi">
+              <a href="https://www.google.com/maps?q=Ngã+ba+Cầu+Tre,Ông+Đình,+Khoái+Châu,+Hưng+Yên" target="_blank" style="color: inherit; text-decoration: none;">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span>  SHOP: Huyền Dương _ Ngã ba Cầu Tre - Ông Đình - Khoái Châu - Hưng Yên </span>
+              </a>
+              </div>
+            
+            <div class="sodienthoai">
+              <a class="elementor-icon elementor-animation-" href="tel:0869 008 681 ">
+				      <i aria-hidden="true" class="fas fa-phone-alt"></i>
+              <span>Hotline: 0869 008 681</span></a>
+            </div>
+            <div class="gmail">
+              <a class="elementor-icon elementor-animation-" href="mailto:huyenbach81@gmail.com">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <span>huyenbach81@gmail.com</span></a>
+            </div>
+        </div>
+
+        <!--cột2-->
+        <div class="footer_colum2">
+          <div class="footer_logo_colum2">
+            <a href ="index.html"> 
+              <img src="img/okula-footer.svg" alt="Logo OKULA"> 
+            </a>
+          </div>
+          <div class="footer-text1_colum2">
+            <p> Công ty cổ phần OKULA GROUP với các sản phẩm tiêu dùng mang thương hiệu OKULA.</p>
+          </div>
+          <div class="footer-text2_colum2">
+            <p> MST: 0110225849</p>
+          </div>
+          <div class="footer_fb_colum2">
+            <a href="https://www.facebook.com/nguyen.huyen.710675" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+            </a>
+          </div>
+          <div class="footer_ytb_colum2">
+            <a href="https://www.youtube.com/channel/UCUHI10aKI_pmHMFbo5kGzuw" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <!--cột3-->
+        <div class="footer_colum3">
+          <div class="footer_text1_colum3">
+            <div class="Tieude"> 
+              <p>Liên kết</p>
+            </div>
+            <div class="Chinhsach">
+              <p>Chính sách giao hàng</p>
+              <p>Chính sách đổi trả hàng</p>
+              <p>Hướng dẫn mua hàng</p>
+              <p>Hướng dẫn thanh toán</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_copyright">
+        <p class="footer_copyright-text1">© Bản quyền thuộc về OKULA chi nhánh Khoái Châu</p>
+        <p class="footer_copyright-text2">Thiết kế bởi: Hieuthanthuong</p>
+  </div>
+</section>
+<script src="dki-login.js"></script>
+
+<script src="countCart.js"></script> 
+  </body>
+</html>

@@ -1,0 +1,89 @@
+/* Nền full màn hình chứa form đăng nhập */
+.container-background {
+  padding: 80px;
+  background-image: url("https://scr.vn/wp-content/uploads/2020/07/%E1%BA%A3nh-n%E1%BB%81n-c%E1%BB%B1c-%C4%91%E1%BB%99c-d%C3%A1o.jpg"); /* Đường dẫn đến ảnh nền */
+  background-size: cover; /* Co giãn ảnh để phủ toàn bộ vùng */
+  background-position-y: -80px;
+  min-height: 100vh; /* Chiều cao bằng 100% chiều cao trình duyệt */
+  display: flex; /* Dùng flexbox để căn giữa nội dung */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+/* Khung chứa form đăng nhập */
+#wrapper {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Màu nền đen trong suốt để form nổi bật trên ảnh */
+
+  padding: 30px 30px 40px; /* Khoảng cách bên trong form trên- trái/phải-dưới */
+  border-radius: 20px; /* Bo góc form */
+  color: white; /* Màu chữ trắng */
+  max-width: 300px; /* Chiều rộng form */
+  text-align: center; /* Căn giữa chữ */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Đổ bóng giúp form nổi bật */
+
+  flex-grow: 1;
+}
+.form-group {
+  position: relative;
+  width: 100%;
+}
+.form-group i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+/* Ô nhập liệu cho tên đăng nhập và mật khẩu */
+
+.form-input {
+  height: 40px; /* cố định chiều cao */
+  width: 100%; /* Chiếm toàn bộ chiều ngang form */
+  padding: 0px 10px 0px 35px; /* Khoảng cách bên trong ô nhập */
+  margin-bottom: 15px; /* Khoảng cách với ô tiếp theo */
+  border: none; /* Xoá viền */
+  border-radius: 5px; /* Bo tròn viền */
+  outline: none; /* Xoá viền xanh khi focus */
+  font-size: 14px; /* Cỡ chữ */
+  line-height: 40px; /* căn chữ giữa theo chiều dọc */
+  box-sizing: border-box;
+}
+
+/* Nút đăng nhập */
+.form-submit {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  margin-top: 30px;
+}
+
+/* Hiệu ứng khi di chuột vào nút */
+.form-submit:hover {
+  background-color: red;
+}
+
+/* Tiêu đề của form */
+.form-heading {
+  margin-bottom: 30px; /* Khoảng cách với phần nhập liệu */
+  font-size: 24px; /* Cỡ chữ lớn */
+  font-weight: bold; /* Chữ đậm */
+}
+
+/* Giao diện dành cho thiết bị có màn hình nhỏ hơn 400px */
+@media (max-width: 400px) {
+  #wrapper {
+    width: 90%; /* Co chiều rộng form xuống 90% màn hình */
+    padding: 20px; /* Thu nhỏ khoảng cách bên trong */
+  }
+}

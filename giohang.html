@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng - OKULA</title>
+    <link rel="stylesheet" href="css/nvar_footer.css" />
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="giohang.css" />
+  </head>
+  <body>
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="img/logo-okula.png" alt="Logo OKULA" />
+      </div>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Trang chủ</a></li>
+        <li><a href="gioithieu.html">Giới thiệu</a></li>
+        <li>
+          <a href="sanpham.html" class="menu-item">Sản Phẩm </a>
+        </li>
+        <li><a href="lienhe.html">Liên hệ</a></li>
+        <li>
+          <a href="login.html" class="menu-item-login">Đăng Nhập</a>
+        </li>
+      </ul>
+
+      <div class="right-section">
+        <div class="search-container">
+          <input type="text" placeholder="Bấm vào đây để tìm kiếm" />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <div class="cart-button-navar">
+          <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a>
+          <span id="soluonggiohang">0</span>
+        </div>
+        <div class="hotline-button">
+          <span><i class="fas fa-phone"></i> Hotline: 0869 008 681</span>
+        </div>
+      </div>
+    </div>
+    <!-- Giao diện giỏ hàng -->
+    <div class="cart-container">
+      <h1 class="title">🛒 Giỏ hàng của bạn</h1>
+
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+      </table>
+      <div class="cart-footer">
+        <p id="cart-total">Tổng: 0 VNĐ</p>
+        <a href="thanhtoan.html" class="order-btn">Đặt Hàng</a>
+      </div>
+    </div>
+    <!--Phần footer -->
+<section class="footer ">
+  <div class="footer-container">
+    <div class="footer-inner">
+      <!--phần trên của footer-->
+      <div class="top-footer">
+          <!--cột1 -->
+        <div class="footer_colum1">
+            <div class="diachi">
+              <a href="https://www.google.com/maps?q=Ngã+ba+Cầu+Tre,Ông+Đình,+Khoái+Châu,+Hưng+Yên" target="_blank" style="color: inherit; text-decoration: none;">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span>  SHOP: Huyền Dương _ Ngã ba Cầu Tre - Ông Đình - Khoái Châu - Hưng Yên </span>
+              </a>
+              </div>
+            
+            <div class="sodienthoai">
+              <a class="elementor-icon elementor-animation-" href="tel:0869 008 681 ">
+				      <i aria-hidden="true" class="fas fa-phone-alt"></i>
+              <span>Hotline: 0869 008 681</span></a>
+            </div>
+            <div class="gmail">
+              <a class="elementor-icon elementor-animation-" href="mailto:huyenbach81@gmail.com">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <span>huyenbach81@gmail.com</span></a>
+            </div>
+        </div>
+
+        <!--cột2-->
+        <div class="footer_colum2">
+          <div class="footer_logo_colum2">
+            <a href ="index.html"> 
+              <img src="img/okula-footer.svg" alt="Logo OKULA"> 
+            </a>
+          </div>
+          <div class="footer-text1_colum2">
+            <p> Công ty cổ phần OKULA GROUP với các sản phẩm tiêu dùng mang thương hiệu OKULA.</p>
+          </div>
+          <div class="footer-text2_colum2">
+            <p> MST: 0110225849</p>
+          </div>
+          <div class="footer_fb_colum2">
+            <a href="https://www.facebook.com/nguyen.huyen.710675" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+            </a>
+          </div>
+          <div class="footer_ytb_colum2">
+            <a href="https://www.youtube.com/channel/UCUHI10aKI_pmHMFbo5kGzuw" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <!--cột3-->
+        <div class="footer_colum3">
+          <div class="footer_text1_colum3">
+            <div class="Tieude"> 
+              <p>Liên kết</p>
+            </div>
+            <div class="Chinhsach">
+              <p>Chính sách giao hàng</p>
+              <p>Chính sách đổi trả hàng</p>
+              <p>Hướng dẫn mua hàng</p>
+              <p>Hướng dẫn thanh toán</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_copyright">
+        <p class="footer_copyright-text1">© Bản quyền thuộc về OKULA chi nhánh Khoái Châu</p>
+        <p class="footer_copyright-text2">Thiết kế bởi: Hieuthanthuong</p>
+  </div>
+</section>
+    <script src="giohang.js"></script>
+    <script src="countCart.js"></script>
+    <script src="dki-login.js"></script>
+  </body>
+</html>

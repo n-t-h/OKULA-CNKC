@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký - OKULA</title>
+    <link rel="stylesheet" href="css/nvar_footer.css" />
+    <link rel="stylesheet" href="login.css" />
+    <!-- Font Awesome (chỉ dùng 1 bản mới nhất) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <body>
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="img/logo-okula.png" alt="Logo OKULA" />
+      </div>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Trang chủ</a></li>
+        <li><a href="gioithieu.html">Giới thiệu</a></li>
+        <li>
+          <a href="sanpham.html" class="menu-item">Sản Phẩm </a>
+        </li>
+        <li><a href="lienhe.html">Liên hệ</a></li>
+        <li>
+          <a href="login.html" class="menu-item-login">Đăng Nhập</a>
+        </li>
+      </ul>
+
+      <div class="right-section">
+        <div class="search-container">
+          <input type="text" placeholder="Bấm vào đây để tìm kiếm" />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <div class="cart-button-navar">
+          <a href="giohang.html"><i class="fas fa-shopping-cart"></i></a>
+          <span id="soluonggiohang">0</span>
+        </div>
+        <div class="hotline-button">
+          <span><i class="fas fa-phone"></i> Hotline: 0869 008 681</span>
+        </div>
+      </div>
+    </div>
+    <!-- Giao diện đăng ký -->
+    <div class="container-background">
+      <div id="wrapper">
+        <form action="xulydangky.php" method="POST" id="form-register">
+          <h1 class="form-heading">Tạo tài khoản</h1>
+
+          <div class="form-group">
+            <i class="far fa-user"></i>
+            <input
+              type="text"
+              name="username"
+              class="form-input"
+              placeholder="Tên đăng nhập"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <i class="far fa-envelope"></i>
+            <input
+              type="email"
+              name="email"
+              class="form-input"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <i class="fas fa-key"></i>
+            <input
+              type="password"
+              name="password"
+              class="form-input"
+              placeholder="Mật khẩu"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              name="confirm_password"
+              class="form-input"
+              placeholder="Xác nhận mật khẩu"
+              required
+            />
+          </div>
+
+          <input type="submit" value="Tạo tài khoản" class="form-submit" />
+
+          <p style="margin-top: 20px; font-size: 14px">
+            Đã có tài khoản?
+            <a href="login.html" style="color: #f39c12">Đăng nhập</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="footer-container">
+        <div class="footer-inner">
+          <div class="top-footer">
+            <div class="footer_colum1">
+              <div class="diachi">
+                <a
+                  href="https://www.google.com/maps?q=Ngã+ba+Cầu+Tre,Ông+Đình,+Khoái+Châu,+Hưng+Yên"
+                  target="_blank"
+                  style="color: inherit; text-decoration: none"
+                >
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span
+                    >SHOP: Huyền Dương _ Ngã ba Cầu Tre - Ông Đình - Khoái Châu
+                    - Hưng Yên</span
+                  >
+                </a>
+              </div>
+              <div class="sodienthoai">
+                <a href="tel:0869008681"
+                  ><i class="fas fa-phone-alt"></i>
+                  <span>Hotline: 0869 008 681</span></a
+                >
+              </div>
+              <div class="gmail">
+                <a href="mailto:huyenbach81@gmail.com"
+                  ><i class="fas fa-envelope"></i>
+                  <span>huyenbach81@gmail.com</span></a
+                >
+              </div>
+            </div>
+
+            <div class="footer_colum2">
+              <div class="footer_logo_colum2">
+                <a href="index.html"
+                  ><img src="img/okula-footer.svg" alt="Logo OKULA"
+                /></a>
+              </div>
+              <div class="footer-text1_colum2">
+                <p>
+                  Công ty cổ phần OKULA GROUP với các sản phẩm tiêu dùng mang
+                  thương hiệu OKULA.
+                </p>
+              </div>
+              <div class="footer-text2_colum2">
+                <p>MST: 0110225849</p>
+              </div>
+              <div class="footer_fb_colum2">
+                <a
+                  href="https://www.facebook.com/nguyen.huyen.710675"
+                  target="_blank"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
+              </div>
+              <div class="footer_ytb_colum2">
+                <a
+                  href="https://www.youtube.com/channel/UCUHI10aKI_pmHMFbo5kGzuw"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="footer_colum3">
+              <div class="footer_text1_colum3">
+                <div class="Tieude"><p>Liên kết</p></div>
+                <div class="Chinhsach">
+                  <p>Chính sách giao hàng</p>
+                  <p>Chính sách đổi trả hàng</p>
+                  <p>Hướng dẫn mua hàng</p>
+                  <p>Hướng dẫn thanh toán</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_copyright">
+          <p>© Bản quyền thuộc về OKULA chi nhánh Khoái Châu</p>
+          <p>Thiết kế bởi: Hieuthanthuong</p>
+        </div>
+      </div>
+    </section>
+    <!-- Liên kết đến js-->
+    <script src="dki-login.js"></script>
+    <script>
+      document
+        .getElementById("form-register")
+        .addEventListener("submit", handleRegister);
+    </script>
+    
+  </body>
+</html>

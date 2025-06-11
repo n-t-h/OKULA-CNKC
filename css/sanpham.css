@@ -1,0 +1,198 @@
+.image-wrapper {
+  width: 100%; /* chiều rộng cụ thể */
+  margin-top: 60px;
+  align-items: center;
+}
+.featured-products5,
+.featured-products3,
+.featured-products1 {
+  padding: 40px 20px; /* Khoảng cách bên trong phần này (trên/dưới 40px, trái/phải 20px) */
+  background-color: white; /* Màu nền trùng với body */
+  text-align: center; /* Căn giữa nội dung bên trong */
+}
+
+.featured-products5 h5,
+.featured-products3 h5,
+.featured-products1 h5 {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.featured-products5 h1 .featured-products3 h1,
+.featured-products1 h1 {
+  color: #292f51; /* Màu chữ trắng cho tiêu đề */
+  font-size: 28px; /* Kích thước chữ lớn */
+  margin-bottom: 30px; /* Khoảng cách dưới tiêu đề để tách biệt với nội dung phía dưới */
+  text-align: center;
+}
+
+.product-grid {
+  display: grid; /* Sử dụng grid để tạo layout dạng lưới */
+  grid-template-columns: repeat(4, 1fr); /* 4 cột đều nhau */
+  gap: 20px; /* Khoảng cách giữa các phần tử trong grid */
+  align-items: stretch; /* Các card trong grid có chiều cao bằng nhau */
+  padding: 50px 300px; /* Khoảng cách bên trong phần grid (trên/dưới 50px, trái/phải 300px) */
+}
+
+.product-card {
+  max-width: 220px; /* Chiều rộng tối đa của mỗi card */
+  max-height: 360px; /* Chiều cao tối đa của mỗi card */
+  background-color: #ffffff; /* Nền trắng cho card */
+  border-radius: 12px; /* Bo tròn góc card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Tạo bóng nhẹ dưới card */
+  width: fit-content; /* Chiều rộng vừa đủ nội dung */
+  transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi khi hover */
+  display: flex; /* Dùng flex để sắp xếp nội dung trong card */
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+  justify-content: space-between; /* Khoảng cách đều giữa các phần tử con (ảnh và info) */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Phóng to card khi hover tạo hiệu ứng nổi bật */
+}
+
+.product-card img {
+  width: 100%; /* Ảnh chiếm toàn bộ chiều rộng card */
+  height: auto; /* Chiều cao tự động tỉ lệ với chiều rộng */
+  object-fit: cover; /* Ảnh được cắt/điều chỉnh sao cho phủ toàn bộ vùng */
+  border-top-left-radius: 12px; /* Bo góc trên bên trái */
+  border-top-right-radius: 12px; /* Bo góc trên bên phải */
+}
+
+.product-info {
+  padding: 12px; /* Khoảng cách bên trong phần thông tin sản phẩm */
+  text-align: left; /* Căn trái văn bản */
+  margin: auto; /* Căn giữa theo chiều dọc */
+}
+
+.product-name {
+  font-size: 14px; /* Kích thước chữ tên sản phẩm */
+  font-weight: 600; /* Đậm vừa phải */
+  margin: 0 0 8px 0; /* Khoảng cách dưới tên sản phẩm */
+  color: #222; /* Màu chữ hơi tối */
+}
+
+.product-price {
+  font-size: 16px; /* Kích thước chữ giá lớn hơn tên */
+  font-weight: bold; /* Đậm */
+  color: #00b300; /* Màu xanh lá nổi bật cho giá */
+  margin: 0; /* Không có margin */
+}
+
+.view-all a {
+  display: inline-block; /* Hiển thị dạng block nhưng cho phép đặt cạnh nhau */
+  background-color: #00d67f; /* Nền xanh cho nút */
+  color: #fff; /* Chữ màu trắng */
+  padding: 10px 20px; /* Khoảng cách bên trong nút */
+  border-radius: 30px; /* Bo tròn nút thành dạng pill */
+  font-weight: 500; /* Đậm vừa phải */
+  text-decoration: none; /* Bỏ gạch chân link */
+  transition: background-color 0.3s ease; /* Hiệu ứng đổi màu khi hover */
+}
+
+.view-all a:hover {
+  background-color: #00c46c; /* Màu nền nút khi hover đậm hơn */
+}
+
+.stars-price {
+  display: flex; /* Sắp xếp các phần tử con theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  gap: 4px; /* Khoảng cách giữa sao và giá */
+  margin: 8px 0;
+}
+
+/* ====================================
+   ⭐ Ngôi sao đánh giá (rating stars)
+==================================== */
+.rating-star {
+  font-size: 10px; /* Kích thước sao */
+  color: lightgray; /* Màu mặc định của sao */
+  cursor: pointer; /* Đổi con trỏ thành tay khi hover */
+  transition: color 0.2s; /* Hiệu ứng chuyển màu khi hover/chọn */
+  margin: 0;
+  padding: 0;
+}
+
+.rating-star.selected {
+  color: gold; /* Màu sao khi được chọn */
+}
+
+/* ====================================
+   💵 Giá sản phẩm
+==================================== */
+.product-price {
+  font-size: 16px; /* Kích thước chữ giá */
+  font-weight: bold; /* In đậm */
+  color: #00b300; /* Màu xanh lá */
+  margin-left: 8px; /* Cách trái một chút so với icon sao */
+}
+
+/* ====================================
+   🛒 Vùng chứa nút giỏ hàng & mua ngay
+==================================== */
+.cart-button {
+  display: flex; /* Sắp xếp các phần tử con theo hàng ngang */
+  gap: 15px; /* Khoảng cách giữa các nút */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-top: 12px; /* Khoảng cách phía trên */
+  padding: 20px 20px; /* Khoảng cách bên trong vùng */
+}
+
+/* ====================================
+   🛒 Nút Giỏ Hàng
+==================================== */
+.cart-button i {
+  background-color: #00b300; /* Nền xanh lá */
+  color: white; /* Icon có màu trắng */
+  border-radius: 50%; /* Bo tròn 100% thành hình tròn */
+  width: 40px; /* Chiều rộng nút */
+  height: 40px; /* Chiều cao nút */
+  display: flex; /* Sắp xếp icon vào giữa */
+  justify-content: center; /* Căn giữa ngang */
+  align-items: center; /* Căn giữa dọc */
+  font-size: 18px; /* Kích thước icon */
+  text-decoration: none; /* Xoá gạch chân nếu là thẻ <a> */
+}
+
+/* ====================================
+    🛍️ Nút Mua Ngay
+==================================== */
+.muangay {
+  background-color: #ff6600; /* Nền cam */
+  color: white; /* Chữ trắng */
+  padding: 10px 16px; /* Kích thước nút */
+  border-radius: 8px; /* Bo tròn nhẹ các góc */
+  font-weight: 600; /* Đậm vừa */
+  font-size: 14px; /* Kích thước chữ */
+  text-decoration: none; /* Xoá gạch chân nếu là thẻ <a> */
+  display: flex; /* Căn giữa chữ theo chiều dọc */
+  align-items: center;
+  height: 40px; /* Chiều cao bằng với nút giỏ hàng */
+  white-space: nowrap; /* ✅ Không cho chữ bị xuống dòng */
+}
+.giohang:hover {
+  background-color: #009900;
+}
+
+.muangay:hover {
+  background-color: #e65c00;
+}
+
+.featured-products4,
+.featured-products2 {
+  padding: 40px 20px; /* Khoảng cách bên trong phần này (trên/dưới 40px, trái/phải 20px) */
+  background-color: #292f51; /* Màu nền trùng với body */
+  text-align: center; /* Căn giữa nội dung bên trong */
+}
+.featured-products4 h5,
+.featured-products2 h5 {
+  color: red;
+  margin-bottom: 20px;
+}
+.featured-products4 h1,
+.featured-products2 h1 {
+  color: white; /* Màu chữ trắng cho tiêu đề */
+  font-size: 28px; /* Kích thước chữ lớn */
+  margin-bottom: 30px; /* Khoảng cách dưới tiêu đề để tách biệt với nội dung phía dưới */
+  text-align: center;
+}

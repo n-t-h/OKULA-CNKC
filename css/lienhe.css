@@ -1,0 +1,270 @@
+/* Reset cơ bản cho phần nội dung chính, nếu chưa có trong nvar_footer.css */
+body {
+  font-family: Arial, sans-serif; /* Hoặc 'Roboto', sans-serif nếu đã import */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; /* Màu nền nhẹ nhàng cho toàn trang */
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng thể */
+  display: flex; /* Dùng flexbox để căn giữa nội dung chính */
+  flex-direction: column; /* Xếp chồng các phần tử theo chiều dọc */
+  min-height: 100vh; /* Đảm bảo chiều cao tối thiểu của body là toàn bộ viewport */
+}
+
+/* Đảm bảo phần navbar và footer không bị ảnh hưởng bởi căn giữa */
+.navbar,
+.footer {
+  width: 100%;
+  /* Các style riêng của navbar và footer */
+}
+
+/* PHẦN LIÊN HỆ CHÍNH */
+.ndlienhe {
+  margin-top: 100px; /* Giữ khoảng cách từ navbar */
+  flex-grow: 1; /* Cho phép phần liên hệ chiếm hết không gian còn lại */
+  display: flex; /* Để căn giữa nội dung .top-lienhe */
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Thêm padding xung quanh khối liên hệ */
+}
+
+.top-lienhe {
+  background-color: #ffffff; /* Nền trắng cho khối chính */
+  border-radius: 15px; /* Bo góc nhẹ nhàng */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ nhàng */
+  max-width: 950px; /* Chiều rộng tối đa cho khối chính */
+  width: 100%; /* Đảm bảo nó chiếm đủ chiều rộng có thể */
+  overflow: hidden; /* Đảm bảo nội dung con không tràn ra ngoài bo góc */
+  display: flex; /* Sử dụng flexbox cho .top-lienhe */
+  flex-wrap: wrap; /* Cho phép các cột xuống hàng trên màn hình nhỏ */
+}
+
+/* --- PHẦN LIÊN HỆ BÊN TRÁI (COLUM1_LIENHE) --- */
+.colum1_lienhe {
+  flex: 1; /* Chiếm không gian linh hoạt */
+  min-width: 350px; /* Chiều rộng tối thiểu cho cột này trước khi xuống dòng */
+  padding: 40px;
+  background-color: #eaf3f9; /* Màu nền xanh nhạt */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+}
+
+.colum1_lienhe h1 {
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.colum1_lienhe p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.colum1_iconphone,
+.colum1_icongmail {
+  display: flex;
+  align-items: center;
+  margin-top: 15px; /* Khoảng cách giữa các dòng thông tin liên hệ */
+  font-size: 16px;
+  color: #333;
+}
+
+.colum1_iconphone i,
+.colum1_icongmail i {
+  font-size: 22px;
+  color: red;
+  margin-right: 15px;
+  width: 25px; /* Đảm bảo icon có cùng chiều rộng để căn chỉnh */
+  text-align: center;
+}
+
+.colum1_iconphone span:first-child,
+.colum1_icongmail span:first-child {
+  font-size: 15px;
+  margin-bottom: 5px; /* Khoảng cách giữa "Gọi tới Hotline:" và số */
+  color: #555;
+  display: block; /* Đảm bảo nó chiếm một dòng riêng */
+}
+
+/* --- PHẦN FORM GÓP Ý BÊN PHẢI (COLUM2_LIENHE) --- */
+.colum2_lienhe {
+  flex: 1; /* Chiếm không gian linh hoạt */
+  min-width: 400px; /* Chiều rộng tối thiểu cho cột này */
+  padding: 40px;
+  background-color: #ffffff; /* Nền trắng */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+}
+
+.form-heading {
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: left; /* Căn lề trái cho tiêu đề form */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: none; /* Bỏ border */
+  border-radius: 8px; /* Bo góc input */
+  background-color: #f3f5f8; /* Màu nền nhẹ cho input */
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+  outline: none; /* Bỏ outline khi focus */
+  transition: box-shadow 0.2s ease;
+}
+
+.form-input::placeholder {
+  color: #aab8c2;
+  font-size: 16px; /* Đảm bảo placeholder có cùng kích thước với text */
+}
+
+.form-input:focus {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Hiệu ứng focus nhẹ */
+}
+
+/* Định kiểu riêng cho TEXTAREA (Nội dung tin nhắn) */
+.form-group textarea.form-input {
+  /* Chỉ định rõ là textarea có class form-input */
+  min-height: 120px; /* Chiều cao tối thiểu cho trường nội dung */
+  resize: vertical; /* Cho phép kéo dãn theo chiều dọc */
+  padding-top: 18px; /* Đảm bảo placeholder không bị sát mép trên */
+  line-height: 1.5; /* Khoảng cách dòng */
+}
+
+/* Các input bình thường (Tên, Email) sẽ không bị ảnh hưởng bởi đoạn trên */
+/* Nếu bạn muốn chắc chắn input text và email có cùng chiều cao, có thể thêm: */
+.form-group input[type="text"].form-input,
+.form-group input[type="email"].form-input {
+  min-height: 50px; /* Chiều cao mặc định cho input text/email */
+  /* Bạn có thể bỏ dòng này nếu `padding` và `line-height` mặc định đã đủ */
+}
+
+.form-submit {
+  background-color: #28a745; /* Màu xanh lá cây */
+  color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex; /* Dùng flexbox để căn giữa text và icon (nếu có) */
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Khoảng cách giữa text và icon */
+  width: fit-content; /* Chiều rộng vừa với nội dung */
+  margin-top: 10px; /* Khoảng cách với input cuối */
+}
+
+.form-submit:hover {
+  background-color: #218838; /* Màu xanh đậm hơn khi hover */
+  transform: translateY(-2px); /* Hiệu ứng nhấc nhẹ lên khi hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 850px) {
+  .top-lienhe {
+    flex-direction: column; /* Xếp chồng các cột khi màn hình nhỏ hơn */
+  }
+
+  .colum1_lienhe,
+  .colum2_lienhe {
+    min-width: unset; /* Bỏ min-width để nó tự co giãn */
+    width: 100%; /* Chiếm toàn bộ chiều rộng có sẵn */
+    padding: 30px; /* Giảm padding trên thiết bị nhỏ */
+  }
+
+  .colum1_lienhe h1,
+  .form-heading {
+    font-size: 26px;
+  }
+
+  .colum1_lienhe p,
+  .colum1_iconphone span,
+  .colum1_icongmail span,
+  .form-input {
+    font-size: 15px;
+  }
+
+  /* Đảm bảo textarea vẫn lớn trên màn hình nhỏ */
+  .form-group textarea.form-input {
+    min-height: 100px; /* Có thể giảm nhẹ chiều cao trên mobile */
+  }
+
+  .form-submit {
+    width: 100%; /* Nút gửi chiếm toàn bộ chiều rộng */
+  }
+}
+
+@media (max-width: 550px) {
+  .ndlienhe {
+    padding: 0; /* Bỏ padding ngoài cùng để khối liên hệ sát mép */
+    margin-top: 80px; /* Giảm margin-top trên mobile nếu navbar nhỏ hơn */
+  }
+  .top-lienhe {
+    border-radius: 0; /* Bỏ bo góc trên màn hình rất nhỏ nếu muốn */
+    box-shadow: none; /* Bỏ bóng trên màn hình rất nhỏ */
+    margin: 0; /* Không có margin */
+  }
+
+  .colum1_lienhe,
+  .colum2_lienhe {
+    padding: 20px;
+  }
+
+  .colum1_lienhe h1,
+  .form-heading {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .colum1_lienhe p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .colum1_iconphone i,
+  .colum1_icongmail i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .colum1_iconphone span:last-child,
+  .colum1_icongmail span:last-child {
+    font-size: 16px;
+  }
+
+  .form-input {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  .form-submit {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .form-submit:hover {
+    background-color: #0056b3;
+  }
+
+  .form-submit {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}

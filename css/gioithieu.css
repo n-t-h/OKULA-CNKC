@@ -1,0 +1,133 @@
+.text-down {
+  margin-top: 80px;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+.letter1 {
+  background-color: white;
+  padding: 60px; /* Giữ lề trái/phải vừa phải để dễ đọc */
+  width: 50vw;
+  font-family: "Arial", sans-serif;
+  margin-right: 200px;
+}
+
+.letter1 h1 {
+  color: #16a34a; /* Màu xanh lá đậm */
+  font-size: 28px; /* Cỡ chữ lớn */
+  margin-bottom: 10px; /* Khoảng cách dưới */
+}
+
+/* ----------------------------------- */
+/* ĐỊNH DẠNG ĐOẠN VĂN TRONG THƯ NGỎ   */
+/* ----------------------------------- */
+.letter1 p {
+  line-height: 1.7; /* Giãn dòng dễ đọc */
+  color: #1f2937; /* Màu chữ xám đậm */
+  margin-bottom: 15px; /* Khoảng cách dưới */
+  font-size: 16px; /* Cỡ chữ chuẩn */
+}
+.letter2 {
+  display: flex;
+  justify-content: center; /* canh ngang */
+  align-items: center; /* canh dọc */
+  background-color: #292f51;
+  color: white;
+  width: 100vw;
+  padding: 80px 80px;
+}
+.container1 {
+  max-width: 500px; /* Giới hạn chiều rộng tối đa */
+  word-wrap: break-word;
+  white-space: normal;
+}
+.letter2 p {
+  line-height: 1.7; /* Giãn dòng dễ đọc */
+  margin-bottom: 15px; /* Khoảng cách dưới */
+  font-size: 16px; /* Cỡ chữ chuẩn */
+}
+.letter2 h1 {
+  text-align: center;
+  color: #16a34a;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.letter3 {
+  display: flex;
+  justify-content: center; /* canh ngang */
+  align-items: center; /* canh dọc */
+  background-color: white;
+  width: 100vw;
+  padding: 80px 80px;
+}
+.container2 {
+  max-width: 500px; /* Giới hạn chiều rộng tối đa */
+  word-wrap: break-word;
+  white-space: normal;
+}
+.letter3 p {
+  line-height: 1.7; /* Giãn dòng dễ đọc */
+  margin-bottom: 15px; /* Khoảng cách dưới */
+  font-size: 16px; /* Cỡ chữ chuẩn */
+  color: #1f2937; /* Màu chữ xám đậm */
+}
+.letter3 h1 {
+  text-align: center;
+  color: #16a34a;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.letter4 {
+  display: flex;
+  justify-content: center; /* canh ngang */
+  align-items: center; /* canh dọc */
+  background-color: #292f51;
+  color: white;
+  width: 100vw;
+  padding: 80px 80px;
+}
+.container3 {
+  max-width: 500px; /* Giới hạn chiều rộng tối đa */
+  word-wrap: break-word;
+  white-space: normal;
+}
+.letter4 p {
+  line-height: 1.7; /* Giãn dòng dễ đọc */
+  margin-bottom: 15px; /* Khoảng cách dưới */
+  font-size: 16px; /* Cỡ chữ chuẩn */
+}
+.letter4 ul {
+  margin-left: 10%;
+}
+.letter4 h1 {
+  text-align: center;
+  color: #16a34a;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.letter5 {
+  display: flex;
+  justify-content: center; /* canh ngang */
+  align-items: center; /* canh dọc */
+  background-color: white;
+  width: 100vw;
+  padding: 80px 80px;
+}
+.container4 {
+  max-width: 500px; /* Giới hạn chiều rộng tối đa */
+  word-wrap: break-word;
+  white-space: normal;
+}
+.letter5 p {
+  line-height: 1.7; /* Giãn dòng dễ đọc */
+  margin-bottom: 15px; /* Khoảng cách dưới */
+  font-size: 16px; /* Cỡ chữ chuẩn */
+}
+.letter5 h1 {
+  text-align: center;
+  color: #16a34a;
+  font-size: 28px;
+  margin-bottom: 50px;
+}

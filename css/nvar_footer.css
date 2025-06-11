@@ -1,0 +1,325 @@
+/* ======================= RESET ======================= */
+/* Reset CSS để đồng bộ hiển thị giữa các trình duyệt */
+* {
+  margin: 0; /* Xóa khoảng cách ngoài mặc định */
+  padding: 0; /* Xóa khoảng cách trong mặc định */
+  box-sizing: border-box; /* Tính cả border và padding vào kích thước phần tử */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Chọn font chữ chung cho toàn trang */
+  overflow-x: hidden; /* Ngăn trang bị trượt ngang */
+}
+
+/* ======================= NAVBAR ======================= */
+/* Thanh điều hướng cố định trên cùng của trang */
+.navbar {
+  position: fixed; /* Cố định vị trí ở đầu trang */
+  top: 0; /* Gắn sát mép trên */
+  width: 100%; /* Chiếm toàn bộ chiều ngang */
+  height: 100px; /* Chiều cao navbar */
+  background-color: #fff; /* Màu nền trắng */
+  display: flex; /* Flexbox canh chỉnh nội dung */
+  justify-content: space-between; /* Nội dung nằm 2 bên trái/phải */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 12px 40px; /* Khoảng cách trong */
+  color: #1a1a2e; /* Màu chữ */
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1); /* Bóng nhẹ phía dưới */
+  z-index: 1000; /* Đảm bảo luôn nằm trên các phần khác */
+}
+
+/* Logo bên trái */
+.navbar-left .logo {
+  height: 40px; /* Chiều cao logo */
+  margin-left: 20px; /* Cách mép trái 20px */
+}
+
+/* Icon người dùng đăng nhập */
+#header-menu-user a {
+  font-size: 32px; /* Kích thước icon lớn */
+}
+
+/* Danh sách menu chính */
+.navbar .menu {
+  display: flex; /* Dàn theo hàng ngang */
+  gap: 30px; /* Khoảng cách giữa các mục */
+  list-style: none; /* Bỏ dấu chấm danh sách */
+  margin-left: 40px; /* Cách logo 40px */
+}
+
+.navbar .menu li a {
+  text-decoration: none; /* Bỏ gạch chân */
+  color: #1a1a2e; /* Màu chữ mặc định */
+  font-size: 16px; /* Cỡ chữ */
+  transition: color 0.3s; /* Hiệu ứng mượt khi đổi màu */
+}
+
+.navbar .menu li a:hover {
+  color: #28a745; /* Màu xanh khi di chuột */
+}
+
+.navbar .menu li a.active {
+  color: green; /* Màu xanh đậm cho menu đang chọn */
+  font-weight: bold; /* In đậm */
+}
+
+/* Phần bên phải navbar (tìm kiếm, giỏ hàng, hotline) */
+.right-section {
+  display: flex; /* Dàn ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  gap: 30px; /* Khoảng cách giữa các mục */
+}
+
+/* ======================= TÌM KIẾM ======================= */
+.search-container {
+  position: relative; /* Làm cha để icon có thể đặt nằm trong input */
+  width: 250px; /* Độ rộng ô tìm kiếm */
+}
+
+.search-container input {
+  width: 100%; /* Chiếm toàn bộ chiều rộng cha */
+  height: 40px; /* Chiều cao */
+  padding: 8px 40px 8px 12px; /* Padding trái phải để icon không đè chữ */
+  font-size: 16px; /* Kích thước chữ */
+  border: 1px solid green; /* Viền màu xanh */
+  border-radius: 20px; /* Bo tròn viền */
+  outline: none; /* Bỏ viền mặc định khi click */
+}
+
+/* Icon kính lúp trong ô tìm kiếm */
+.search-container .search-icon {
+  position: absolute; /* Vị trí tuyệt đối */
+  right: 12px; /* Cách mép phải */
+  top: 50%; /* Căn giữa chiều cao */
+  transform: translateY(-50%); /* Dịch icon lên để giữa ô */
+  color: green; /* Màu xanh */
+  font-size: 18px; /* Kích thước icon */
+  pointer-events: none; /* Không ảnh hưởng đến thao tác người dùng */
+}
+
+/* ======================= GIỎ HÀNG ======================= */
+/* Nút giỏ hàng chứa icon và badge số lượng */
+.cart-button-navar {
+  position: relative; /* Làm cha cho badge */
+  display: inline-block; /* Hiển thị như khối nội tuyến */
+}
+
+/* Badge hiển thị số lượng sản phẩm trong giỏ */
+.cart-button-navar #soluonggiohang {
+  position: absolute; /* Đặt đè lên nút */
+  top: -8px; /* Lệch lên trên */
+  right: -8px; /* Lệch sang phải */
+  background-color: red; /* Nền đỏ */
+  color: white; /* Chữ trắng */
+  border-radius: 50%; /* Bo tròn */
+  padding: 2px 6px; /* Kích thước badge */
+  font-size: 12px; /* Kích thước chữ nhỏ */
+  font-weight: bold; /* Chữ đậm */
+  min-width: 20px; /* Chiều rộng tối thiểu */
+  text-align: center; /* Căn giữa nội dung */
+  line-height: 1; /* Khoảng cách dòng */
+}
+
+/* Nút giỏ hàng chính */
+.cart-button-navar {
+  width: 36px; /* Kích thước vuông */
+  height: 36px;
+  border: 1px solid green; /* Viền xanh */
+  border-radius: 50%; /* Bo tròn */
+  display: flex; /* Căn giữa icon */
+  align-items: center;
+  justify-content: center;
+  background: white; /* Nền trắng */
+  color: green; /* Icon màu xanh */
+  font-size: 18px; /* Kích thước icon */
+  cursor: pointer; /* Con trỏ bàn tay */
+}
+
+.cart-button-navar:hover {
+  background-color: #e6ffe6; /* Màu nền khi di chuột */
+}
+
+/* ======================= HOTLINE ======================= */
+/* Nút hiển thị hotline với icon */
+.hotline-button {
+  display: flex; /* Dàn icon và chữ ngang */
+  align-items: center;
+  gap: 8px; /* Khoảng cách giữa icon và text */
+  padding: 8px 16px; /* Khoảng cách nội dung */
+  border: 1.5px solid green; /* Viền xanh */
+  border-radius: 40px; /* Bo tròn */
+  color: green; /* Màu chữ */
+  background-color: white; /* Nền trắng */
+  font-weight: bold; /* Chữ đậm */
+  font-size: 16px; /* Cỡ chữ */
+  cursor: pointer;
+}
+
+.hotline-button:hover {
+  background-color: #e6ffe6; /* Hover màu xanh nhạt */
+}
+
+/* ======================= FOOTER ======================= */
+.footer {
+  background-color: #1f254a; /* Màu nền footer */
+  color: white; /* Màu chữ */
+  font-family: Inter, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px; /* Giới hạn chiều rộng footer */
+  margin: 0 auto; /* Căn giữa */
+  padding: 10px 20px;
+}
+
+/* Dòng bản quyền ở cuối cùng */
+.footer_copyright {
+  background-color: #1b1f38; /* Nền tối hơn */
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Khối nội dung chính của footer (3 cột) */
+.top-footer {
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Cho phép xuống hàng */
+  margin: 30px 0px;
+}
+
+/* Cột 1: Thông tin liên hệ */
+.footer_colum1 {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-right: 30px;
+}
+
+.footer_colum1 a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Link email hiển thị màu xanh */
+.footer_colum1 a[href^="mailto:"] {
+  color: green;
+}
+
+.diachi,
+.sodienthoai,
+.gmail {
+  font-size: 12px; /* Kích thước chữ nhỏ */
+}
+
+.diachitiep {
+  font-size: 10px;
+  margin-top: -20px;
+  margin-right: 20px;
+}
+
+/* Cột 2: Logo và mạng xã hội */
+.footer_colum2 {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.footer_colum2 img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer_colum2 p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.footer_fb_colum2,
+.footer_ytb_colum2 {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Icon mạng xã hội */
+.footer_fb_colum2 i,
+.footer_ytb_colum2 i {
+  font-size: 30px;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer_fb_colum2 i:hover {
+  color: blue;
+}
+
+.footer_ytb_colum2 i:hover {
+  color: red;
+}
+
+/* Cột 3: Chính sách */
+.footer_colum3 {
+  margin-left: 100px;
+  min-width: 250px;
+  flex: 1;
+}
+
+.Tieude {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Chinhsach {
+  margin-top: 30px;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.footer_colum3 p:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ======================= RESPONSIVE ======================= */
+/* Điều chỉnh cho màn hình nhỏ (điện thoại, tablet) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng */
+    justify-content: center; /* Căn giữa */
+  }
+
+  .menu {
+    flex-direction: column; /* Menu dọc */
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .right-section {
+    margin-top: 10px;
+  }
+
+  .top-footer {
+    flex-direction: column; /* Các cột xếp dọc */
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .footer_colum1,
+  .footer_colum2,
+  .footer_colum3 {
+    align-items: center;
+    flex: none;
+    width: 100%;
+    max-width: 500px;
+  }
+}
